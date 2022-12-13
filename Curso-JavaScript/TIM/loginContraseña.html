@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIM</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="fondoPantallaContrasena"></div>
-</body>
+    <script>
+        function sesionIniciada(){
+            location.href = "home.html"
+        }
+    </script>
+  </head>
+  <body>
+    <div class="fondoPantallaContrasena">
+      <img class="logoEmpresa" src="recursos/Logo.png" alt="logoEmpresa" />
+      <img class="fotoPerfil" src="recursos/fotoPerfil.png" alt="usuario" />
+      <label class="labelUser">Iván Ortiz Maura</label>
+      <input
+        class="inputUsuario"
+        type="password"
+        id="contraseña"  
+        name="contraseña"
+        required
+        placeholder="Contraseña"
+      />
+      <button class="botonSiguiente" onclick="sesionIniciada()">
+        Iniciar Sesión
+      </button>
+      <label class="registroContraseña">¿Has olvidado tu contraseña?</label>
+    </div>
+  </body>
 </html>
