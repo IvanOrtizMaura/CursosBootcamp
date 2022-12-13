@@ -1,0 +1,83 @@
+.registroContraseña {
+  position: absolute;
+  width: 146px;
+  height: 45px;
+  left: 117px;
+  top: 440px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #2c2a8a;
+
+}
+.inputUsuario {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  left: 90px;
+  top: 368px;
+}
+.botonGoogle {
+  position: absolute;
+  width: 210px;
+  height: 38px;
+  left: 90px;
+  top: 497px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+.botonSiguiente {
+  position: absolute;
+  width: 102px;
+  height: 23px;
+  left: 144px;
+  top: 410px;
+  color: #ffffff;
+  background: rgba(44, 42, 138,0.82);
+  border-radius: 3px;
+}
+.iconUser {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 133px;
+  top: 207px;
+}
+.logoEmpresa {
+  position: absolute;
+  width: 85px;
+  height: 72.23px;
+  left: 153px;
+  top: 48px;
+}
+.logoGoogle {
+  width: 30px;
+  height: 30px;
+}
+.fondoPantalla {
+  position: absolute;
+  width: 390px;
+  height: 850px;
+  left: 0px;
+  top: -3px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
+    url(recursos/FondoPantallaLogin.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.fondoPantallaContrasena {
+    position: absolute;
+    width: 390px;
+    height: 850px;
+    left: 0px;
+    top: -3px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
+      url(recursos/FondoPantallaContrasena.jpg);
+    background-size: cover;
+    background-position: center;
+  }
