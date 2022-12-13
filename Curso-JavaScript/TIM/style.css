@@ -1,9 +1,40 @@
-.registroContraseña {
+/* Navbar */
+.navBar {
+  position: absolute;
+  width: 390px;
+  height: 80px;
+  left: 0;
+  top: 0;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logoNavbar {
+  position: absolute;
+  width: 55px;
+  height: 47px;
+  left: 170px;
+  top: 30px;
+}
+.iconTarjetaNavbar {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 321px;
+  top: 46px;
+}
+.iconUsaurioNavbar {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 355px;
+  top: 46px;
+}
+.registroOContraseña {
   position: absolute;
   width: 146px;
   height: 45px;
-  left: 117px;
-  top: 440px;
+  left: 113px;
+  top: 470px;
 
   font-family: "Inter";
   font-style: normal;
@@ -15,12 +46,15 @@
   color: #2c2a8a;
 }
 
+/* LoginUsuario */
 .inputUsuario {
   position: absolute;
   width: 210px;
   height: 30px;
   left: 90px;
   top: 368px;
+  border: 0px;
+  border-radius: 7px;
 }
 
 .botonGoogle {
@@ -28,8 +62,9 @@
   width: 210px;
   height: 38px;
   left: 90px;
-  top: 497px;
+  top: 550px;
   background: #ffffff;
+  border: 0px;
   border-radius: 7px;
 }
 
@@ -40,9 +75,12 @@
   left: 144px;
   top: 410px;
   color: #ffffff;
-  background: rgba(44, 42, 138, 0.82);
+  background: rgba(44, 42, 138);
+  border: 0px;
   border-radius: 3px;
 }
+
+/* LoginContrasena */
 
 .iconUser {
   position: absolute;
@@ -71,8 +109,7 @@
   height: 850px;
   left: 0px;
   top: -3px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
-    url(recursos/FondoPantallaLogin.jpg);
+  background: url(recursos/FondoPantallaLogin.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -92,18 +129,20 @@
 
 .fotoPerfil {
   position: absolute;
-  width: 140px;
+  width: 139px;
   height: 125px;
   left: 125px;
-  top: 200px;
+  top: 320px;
 }
 
 .labelUser {
+  /* Iván Ortiz Maura */
+
   position: absolute;
   width: 146px;
   height: 16px;
-  left: 145px;
-  top: 322px;
+  left: 130px;
+  top: 428px;
 
   font-family: "Inter";
   font-style: normal;
@@ -112,4 +151,296 @@
   line-height: 22px;
 
   color: #000000;
+}
+
+.inputContrasena {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  left: 90px;
+  top: 465px;
+  border: 0px;
+  border-radius: 7px;
+}
+
+.botonInciaSesion {
+  position: absolute;
+  width: 102px;
+  height: 23px;
+  left: 144px;
+  top: 516px;
+
+  color: white;
+
+  background: rgb(44, 42, 138);
+
+  border: 0px;
+  border-radius: 3px;
+}
+
+.olvidadoContrasena {
+  position: absolute;
+  width: 168px;
+  height: 15px;
+  left: 117px;
+  top: 550px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: rgba(44, 42, 138, 0.75);
+}
+
+/* Home */
+/* Apartado de Tarjeta del usaurio */
+.tarjetaCSS {
+  position: absolute;
+  width: 390px;
+  height: 166px;
+  left: 0px;
+  top: 102px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.iconTarjeta {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 52px;
+  top: 30px;
+}
+
+.labelTitleTarjeta {
+  position: absolute;
+  width: 69px;
+  height: 24px;
+  left: 160px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+
+  opacity: 0.7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.labelNumeroTarjeta {
+  position: absolute;
+  width: 131px;
+  height: 15px;
+  left: 245px;
+  top: 35px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.labelNombreUsuario {
+  position: absolute;
+  width: 94px;
+  height: 15px;
+  left: 245px;
+  top: 55px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.labelTipoUsuario {
+  position: absolute;
+  width: 37px;
+  height: 15px;
+  left: 245px;
+  top: 75px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.labelSaldo {
+  position: absolute;
+  width: 34px;
+  height: 15px;
+  left: 247px;
+  top: 95px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.buttonAnadirSaldo {
+  position: absolute;
+  width: 69px;
+  height: 21px;
+  left: 229px;
+  top: 115px;
+
+  background: #312f8a;
+  border: 0px;
+  border-radius: 7px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #ffffff;
+}
+
+/* Apartado de Incidencias */
+.incidenciasCSS {
+  position: absolute;
+  width: 390px;
+  height: 300px;
+  left: 0px;
+  top: 280px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.incidencia {
+  position: absolute;
+  width: 170px;
+  height: 245px;
+  left: 17px;
+  top: 30px;
+
+  background: #d8bb93;
+  opacity: 0.48;
+}
+.incidencia1 {
+  position: absolute;
+  width: 170px;
+  height: 245.88px;
+  left: 206px;
+  top: 30px;
+
+  background: #d8bb93;
+  opacity: 0.48;
+}
+.labelIncidencia {
+  position: absolute;
+  width: 144px;
+  height: 39px;
+  left: 15px;
+  top: 200px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #312f8a;
+}
+.iconFlecha {
+  position: absolute;
+  width: 15px;
+  height: 16.76px;
+  left: 189px;
+  top: 280px;
+
+  opacity: 0.43;
+}
+
+/* Apartado de Horarios */
+.horariosCSS {
+  position: absolute;
+  width: 390px;
+  height: 240px;
+  left: 0px;
+  top: 590px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.lineasBuses {
+  position: absolute;
+  width: 110px;
+  height: 190px;
+  left: 11px;
+  top: 30px;
+
+  background: #d8bb93;
+  opacity: 0.48;
+}
+
+.lineasBuses2 {
+  position: absolute;
+  width: 110px;
+  height: 190px;
+  left: 139px;
+  top: 30px;
+
+  background: #d8bb93;
+  opacity: 0.48;
+}
+
+.lineasBuses3 {
+  position: absolute;
+  width: 110px;
+  height: 190px;
+  left: 263px;
+  top: 30px;
+
+  background: #d8bb93;
+  opacity: 0.48;
+}
+.iconReloj {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 25px;
+  top: 30px;
+}
+.labelLinea {
+  position: absolute;
+  width: 84.88px;
+  height: 35px;
+  left: 15px;
+  top: 100px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #312f8a;
 }
