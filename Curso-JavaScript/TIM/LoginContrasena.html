@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIM</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script>
-        function sesionIniciada(){
-            location.href = "home.html"
-        }
+    <script src="App.js">
     </script>
   </head>
   <body>
@@ -25,7 +22,7 @@
         required
         placeholder="Contraseña"
       />
-      <button class="botonInciaSesion" onclick="sesionIniciada()">
+      <button class="botonInciaSesion" onclick="verificacionContrasena()">
         Iniciar Sesión
       </button>
       <label class="olvidadoContrasena">¿Has olvidado tu contraseña?</label>

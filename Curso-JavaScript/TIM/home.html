@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIM</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script>
+        function ventanaLinea(){
+            location.href = "Linea1.html"
+        }
+    </script>
 </head>
 <body>
     <div class="navBar">
@@ -34,10 +39,11 @@
         </div>
         <img src="recursos/iconFlecha.png" alt="flecha" class="iconFlecha">
     </div>
+
     <!-- Apartado de Horarios de buses -->
     <div class="horariosCSS">
         <label class="labelTitleTarjeta">Horarios</label>
-        <div class="lineasBuses">
+        <div class="lineasBuses" onclick="ventanaLinea()">
             <img src="recursos/iconReloj.png" alt="reloj" class="iconReloj">
             <label class="labelLinea">Linea 8 <br> Palma - Inca</label>
         </div>

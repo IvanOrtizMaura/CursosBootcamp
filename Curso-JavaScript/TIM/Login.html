@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIM</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script>
-      function vetnanaContrasena() {
-        location.href = "LoginContrasena.html";
-      }
+    <script src="App.js">
     </script>
   </head>
   <body>
@@ -19,14 +16,13 @@
       <input
         class="inputUsuario"
         type="text"
-        id="usuario"
-        name="usuario"
-        required
+        id="user"
         placeholder="Usuario"
       />
-      <button class="botonSiguiente" onclick="vetnanaContrasena()">Siguiente</button>
+      <button class="botonSiguiente" onclick="verificacionUsuario()">Siguiente</button>
       <label class="registroOContraseña"
-        >¿Has olvidado tu usario? <br /> o <br>
+        >¿Has olvidado tu usario? <br />
+        o <br />
         Registrate</label
       >
       <button class="botonGoogle">
