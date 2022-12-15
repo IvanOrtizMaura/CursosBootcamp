@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TIM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="./../JavaScript/App.js"></script>
   </head>
   <body>
     <div class="fondoPantalla">
       <img class="logoEmpresa" src="recursos/Logo.png" alt="logoEmpresa" />
       <img class="iconUser" src="recursos/UsuarioLogin.png" alt="usuario" />
-      <input
-        class="inputUsuario"
-        type="text"
-        id="user"
-        placeholder="Usuario"
-      />
-      <button class="botonSiguiente" onclick="validarUsuario()">Siguiente</button>
+      <form method="post">
+        <input
+          class="inputUsuario"
+          type="text"
+          id="user"
+          placeholder="Usuario"
+        />
+        <input  type="submit" class="botonSiguiente" value="Siguiente" />
+      </form>
+
       <label class="registroOContraseña"
         >¿Has olvidado tu usario? <br />
         o <br />

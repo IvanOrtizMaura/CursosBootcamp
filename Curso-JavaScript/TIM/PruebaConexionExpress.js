@@ -10,7 +10,7 @@ let mysql2 = require("mysql2");
 let conexion = mysql2.createConnection({
   host: "localhost",
   user: "root",
-  password: "root",
+  password: "1v4nG00n3r45",
   database: "tim",
 });
 conexion.connect(function (err) {
@@ -30,25 +30,28 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./Public/Login.html"));
 });
 
+
+
+app.post("/login", (req, res) => {
+  
+
+});
+
 function validarUsuario(inputUsuario) {
-  let query = `select nombreUser from usuarios where nombreUser = '${inputUsuario}'`;
+  let query = `select nombreUsuario from usuarios where nombreUsuario = '${inputUsuario}'`;
   conexion.query(query, function (req, res, fields) {
-    if (err) throw err;
-    let usuario = res[0].nombreUser;
+    if (req) throw req;
+    let usuario = res[0].nombreUsuario;
     if (usuario == inputUsuario) {
-      app.get("/loginContrasena", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "./Public/LoginContrasena.html"));
-      });
+      // app.get("/loginContrasena", (req, res) => {
+      //   res.sendFile(path.resolve(__dirname, "./Public/LoginContrasena.html"));
+      // });
+      console.log(usuario);
     } else {
       alert("Error al introducir el usuario");
     }
   });
 }
-
-const eventListener = (input, funcion) => {
-  input.addEventListener("keyup", funcion);
-  input.addEventListener("blur", funcion);
-};
 
 // // Verifico el Usuario
 // function verificacionUsuario() {
@@ -74,4 +77,3 @@ const eventListener = (input, funcion) => {
 //     console.log(contrasena);
 //   }
 // }
-
